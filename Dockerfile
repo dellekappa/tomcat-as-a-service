@@ -1,8 +1,9 @@
+# Create the image from the latest image
+FROM centos:latest
+
 ARG TOMCAT_MAJOR='7'
 ARG TOMCAT_VERSION='7.0.75'
 ARG JAVA_VERSION='1.7.0'
-# Create the image from the latest image
-FROM centos:latest
 
 LABEL Version 1.${TOMCAT_MAJOR}
 MAINTAINER dellekappa <https://github.com/dellekappa/>
