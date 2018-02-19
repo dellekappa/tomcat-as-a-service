@@ -7,7 +7,7 @@ ARG JAVA_VERSION='1.7.0'
 LABEL Version 1.${TOMCAT_MAJOR}
 MAINTAINER dellekappa <https://github.com/dellekappa/>
 
-ENV TOMCAT_MAJOR=`expr match "$TOMCAT_VERSION" '^[0-9]+'`
+ENV TOMCAT_MAJOR=`expr match "$TOMCAT_VERSION" '^[0-9]+'` \
     USER_NAME='user' \
     INSTANCE_NAME='instance'
 # Install dependencies
